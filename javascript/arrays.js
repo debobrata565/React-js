@@ -22,3 +22,19 @@ let newArr = myArr.join()
 console.log(newArr) // join , convert the array into string
 console.log(typeof myArr) // output object
 console.log(typeof newArr) // output string
+
+// slice and splice method
+
+console.log("A ", myArr) // A  [ 27, 23, 10, 45 ]
+const myn1 = myArr.slice(1,3)
+console.log(myn1) // [ 23, 10 ]
+console.log("B", myArr) // B [ 27, 23, 10, 45 ]
+
+const myn2 = myArr.splice(1,3)
+console.log(myn2) // [ 23, 10, 45 ]
+console.log("C ", myArr) // C  [ 27 ]
+
+// so in js array main difference between slice and splice is that
+// slice() returns a shallow copy of a portion of an array without modifying
+// the original array, while splice() changes the original array by adding or 
+// removing elements.
